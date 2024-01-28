@@ -1,0 +1,9 @@
+The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet, making it a pangram. Interestingly, pangrams are used in typing practice and font display.
+
+In a different context, numerical data such as "12345" is often required for various testing purposes. However, this function focuses on letters and words, not numbers.
+
+Consider a paragraph with repetitive words. Repetitive, repetitive, repetitive! Does it seem redundant? Redundant phrases often illustrate the use of frequency analysis.
+
+Lastly, what about special characters? Well, they are usually ignored in letter frequency counts. For instance, punctuation marks like commas, periods, exclamation marks, and question marks are not letters.
+
+The end.
