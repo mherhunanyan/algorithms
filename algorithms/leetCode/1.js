@@ -1,4 +1,16 @@
 function twoSum(arr, target) {
+  let length = arr.length;
+  for (let i = 0; i < length; ++i) {
+    for (let j = i + 1; j < length; ++j) {
+      if (arr[i] + arr[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+  return [];
+}
+
+function twoSum2(arr, target) {
   const hashMap = new Map();
   for (let i = 0; i < arr.length; ++i) {
     let complement = target - arr[i];
@@ -10,5 +22,5 @@ function twoSum(arr, target) {
   return [];
 }
 
-const nums = [2, 7, 11, 15];
-console.log(twoSum(nums, 9)); // [0, 1]
+const nums = [4, 4];
+console.log(twoSum(nums, 8));
