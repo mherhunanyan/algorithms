@@ -3,7 +3,7 @@ function twoSum(arr, target) {
   let right = arr.length - 1;
   while (left < right) {
     if (arr[left] + arr[right] === target) {
-      return [left, right];
+      return [left + 1, right + 1];
     }
     if (target > arr[left] + arr[right]) {
       left++;
