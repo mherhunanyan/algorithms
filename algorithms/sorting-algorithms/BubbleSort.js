@@ -1,4 +1,4 @@
-export function BubbleSort(arr) {
+function BubbleSort(arr) {
   let totalArr = arr.length;
   for (let i = 0; i < totalArr - 1; ++i) {
     let swaped = false;

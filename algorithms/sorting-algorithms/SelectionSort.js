@@ -1,4 +1,4 @@
-export function SelectionSort(arr) {
+function SelectionSort(arr) {
   let totalArr = arr.length;
   for (let i = 0; i < totalArr - 1; ++i) {
     let min = arr[i];
