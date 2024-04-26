@@ -1,4 +1,4 @@
-function lowerBound(arr, target) {
+const binarySearch = (arr, target) => {
   let left = 0;
   let right = arr.length - 1;
   while (left <= right) {
@@ -10,7 +10,11 @@ function lowerBound(arr, target) {
     }
   }
   return left;
+};
+
+function searchInsert(arr, target) {
+  return binarySearch(arr, target);
 }
 
-const arr = [1, 4, 4, 7, 8, 8, 9, 10, 11, 12, 13, 16, 19, 20, 22];
-console.log(lowerBound(arr, 8));
+const arr = [1, 2, 4, 8];
+console.log(searchInsert(arr, 9));

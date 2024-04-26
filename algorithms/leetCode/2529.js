@@ -1,5 +1,5 @@
 function maximumCount(arr) {
-  const binarySearchNegative = () => {
+  const bsFirstNonNegative = () => {
     let left = 0;
     let right = arr.length - 1;
     while (left <= right) {
@@ -12,8 +12,8 @@ function maximumCount(arr) {
     }
     return left;
   };
-  
-  const binarySearchPositive = () => {
+
+  const bsFirstPositive = () => {
     let left = 0;
     let right = arr.length - 1;
     while (left <= right) {
@@ -27,7 +27,7 @@ function maximumCount(arr) {
     return arr.length - left;
   };
 
-  return Math.max(binarySearchNegative(), binarySearchPositive());
+  return Math.max(bsFirstNonNegative(), bsFirstPositive());
 }
 
 const nums = [-3, -2, -1, 0, 0, 1, 2];
