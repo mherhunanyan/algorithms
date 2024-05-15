@@ -75,27 +75,24 @@ class SingleLinkedList {
     reverse() {
         if (!this.head.next) {
             return this.head;
-          }
-          this.tail = this.head;
-          let first = this.head;
-          let second = first.next;
-          while(second) {
-            const temp = second.next;
-            second.next = first;
-            first = second;
-            second = temp;
-          }
-      
-          this.head.next = null;
-          this.head = first;
-          return this.printList();
+        }
+        let curr = this.head;
+        this.tail = this.head;
+        let prev = null;
+        while (curr) {
+            let next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        this.head = prev;
+        return this.printList();
     }
 }
 
-const myLinkedList = new SingleLinkedList(10);
-myLinkedList.append(5)
-myLinkedList.append(16)
-myLinkedList.append(7);
-myLinkedList.append(66);
-myLinkedList.insert(2, 99)
+const myLinkedList = new SingleLinkedList(1);
+myLinkedList.append(2)
+myLinkedList.append(3)
+myLinkedList.append(4);
+myLinkedList.append(5);
 console.log(myLinkedList.reverse());
