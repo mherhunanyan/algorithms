@@ -1,18 +1,22 @@
 function mergeInBetween(list1, a, b, list2) {
-    let indexOfB = list1;
-    while (b) {
-        indexOfB = indexOfB.next;
-        b--;
+    let rigthStart = list1;
+    b++;
+    while (b--) {
+        rigthStart = rigthStart.next;
     }
-    let indexOfA = list1;
-    while (a == 1) {
-        indexOfA = indexOfA.next;
-        a--;
+
+    let prev = list1;
+    let c1 = {val: 0, next: prev};
+    a--;
+    while (a--) {
+        prev = prev.next;
     }
-    indexOfA.next = list2;
-    let lastIndexOfList2 = list2;
-    while (lastIndexOfList2?.next) {
-        lastIndexOfList2 = lastIndexOfList2.next;
+    prev.next = list2;
+    let endOfList2 = list2;
+    while (endOfList2.next) {
+        endOfList2 = endOfList2.next;
     }
-    lastIndexOfList2.next = indexOfB;
+    endOfList2.next = rigthStart;
+    return c1.next;
 }
+
