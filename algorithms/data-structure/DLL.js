@@ -5,7 +5,7 @@
 //     }
 // }
 
-class DoublyLinkedList {
+class DLL {
     constructor(value) {
         this.head = {
             value,
@@ -95,8 +95,8 @@ class DoublyLinkedList {
     }
 }
 
-const myLinkedList = new DoublyLinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.remove(1);
-console.log(myLinkedList);
+const myDLL = new DLL(10);
+myDLL.append(5);
+myDLL.append(16);
+myDLL.remove(1);
+console.log(myDLL);

@@ -5,7 +5,7 @@ class Node {
     }
 }
 
-class SingleLinkedList {
+class SLL {
     constructor(value) {
         this.head = {
             value: value,
@@ -90,9 +90,9 @@ class SingleLinkedList {
     }
 }
 
-const myLinkedList = new SingleLinkedList(1);
-myLinkedList.append(2)
-myLinkedList.append(3)
-myLinkedList.append(4);
-myLinkedList.append(5);
-console.log(myLinkedList.reverse());
+const mySLL = new SLL(1);
+mySLL.append(2)
+mySLL.append(3)
+mySLL.append(4);
+mySLL.append(5);
+console.log(mySLL.reverse());

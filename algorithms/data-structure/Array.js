@@ -1,4 +1,4 @@
-class MyArray {
+class Array {
   constructor() {
     this.length = 0;
     this.data = {};
@@ -35,7 +35,7 @@ class MyArray {
   }
 }
 
-const newArray = new MyArray();
+const newArray = new Array();
 newArray.push('Hi');
 newArray.push('Arsen');
 newArray.delete(1);
