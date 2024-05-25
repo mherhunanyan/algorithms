@@ -1,7 +1,6 @@
 class HashTable {
   constructor(size) {
     this.data = new Array(size);
-    this.obj = {};
   }
 
   _hash(key) {
